@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.medium.com/v1/users/1b619f0be1bc842ffc55e8a20c7d6c9129ba896467b90ab9e23b86a36fdd2a67e/posts
+    body:
+      encoding: UTF-8
+      string: title=My%20First%20Post&content_format=markdown&content=%23%20My%20First%20Post%0A%23%23%20I%20created%20this%20post%20via%20API
+    headers:
+      Authorization:
+      - Bearer 2ada46c383ae76af4ca4dcbe42f7611062644f366bd6281c2efe78202b35f3c60
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Fri, 16 Jul 2021 04:40:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '364'
+      Connection:
+      - keep-alive
+      Sepia-Upstream:
+      - medium
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 09 Sep 1999 09:09:09 GMT
+      Link:
+      - <https://medium.com/humans.txt>; rel="humans"
+      Location:
+      - https://medium.com/@nmisharin/my-first-post-7f5c653c9ff3
+      Medium-Fulfilled-By:
+      - valencia/main-20210715-200343-68f173089a
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - uid=lo_d280582aa70e; Path=/; Domain=medium.com; Expires=Sat, 16 Jul 2022 04:40:40
+        GMT; HttpOnly; Secure
+      X-Envoy-Upstream-Service-Time:
+      - '414'
+      X-Obvious-Info:
+      - 20210716-0031-root,64a9d47f
+      X-Opentracing:
+      - '{"ot-tracer-spanid":"442793d6399e24c4","ot-tracer-traceid":"5bbd861d467976df","ot-tracer-sampled":"true"}'
+      X-Powered-By:
+      - Medium
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 66f88dc39e1f16f7-DME
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7f5c653c9ff3","title":"My First Post","authorId":"1b619f0be1bc842ffc55e8a20c7d6c9129ba896467b90ab9e23b86a36fdd2a67e","url":"https://medium.com/@nmisharin/my-first-post-7f5c653c9ff3","canonicalUrl":"","publishStatus":"","publishedAt":1626410440601,"license":"","licenseUrl":"https://policy.medium.com/medium-terms-of-service-9db0094a1e0f","tags":[]}}'
+  recorded_at: Fri, 16 Jul 2021 04:40:40 GMT
+recorded_with: VCR 6.0.0

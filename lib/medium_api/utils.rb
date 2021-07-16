@@ -1,4 +1,4 @@
-module MediumApi
+class MediumApi
   module Utils
     module_function
 
